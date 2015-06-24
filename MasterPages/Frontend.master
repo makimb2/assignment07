@@ -22,8 +22,12 @@
             <asp:Menu ID="Menu1" runat="server" CssClass="MainMenu" DataSourceID="SiteMapDataSource1" OnMenuItemClick="Menu1_MenuItemClick" Orientation="Horizontal" StaticEnableDefaultPopOutImage="False">
 
             </asp:Menu>
+<<<<<<< HEAD
             
             <asp:TreeView ID="TreeView1" runat="server">
+=======
+            <asp:TreeView ID="TreeView1" runat="server" DataSourceID="SiteMapDataSource1" ShowExpandCollapse="False">
+>>>>>>> origin/master
                 <LevelStyles>
                     <asp:TreeNodeStyle CssClass="FirstLevelMenuItems" />
                 </LevelStyles>
@@ -31,6 +35,7 @@
             <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="False" />
         </nav>
         <section id="MainContent">
+            <asp:SiteMapPath ID="SiteMapPath1" runat="server"></asp:SiteMapPath><br /><br />
             <asp:ContentPlaceHolder ID="cpMainContent" runat="server"> </asp:ContentPlaceHolder>
         </section>
         <aside id="Sidebar">Sidebar Goes Here</aside>
