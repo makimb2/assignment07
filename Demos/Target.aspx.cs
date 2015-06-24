@@ -4,15 +4,10 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Web.UI.MasterPage;
 
-public partial class MasterPages_Frontend : BasePage
+public partial class Demos_Target: BasePage
 {
     protected void Page_Load(object sender, EventArgs e)
-    {
-
-    }
-    protected void Menu1_MenuItemClick(object sender, MenuEventArgs e)
     {
 
     }

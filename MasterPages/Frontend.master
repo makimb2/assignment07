@@ -18,9 +18,16 @@
     <div id="PageWrapper">
         <header><a href="/">Header Goes Here</a></header>
         <nav>
+
             <asp:Menu ID="Menu1" runat="server" CssClass="MainMenu" DataSourceID="SiteMapDataSource1" OnMenuItemClick="Menu1_MenuItemClick" Orientation="Horizontal" StaticEnableDefaultPopOutImage="False">
 
             </asp:Menu>
+            
+            <asp:TreeView ID="TreeView1" runat="server">
+                <LevelStyles>
+                    <asp:TreeNodeStyle CssClass="FirstLevelMenuItems" />
+                </LevelStyles>
+            </asp:TreeView>
             <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="False" />
         </nav>
         <section id="MainContent">
